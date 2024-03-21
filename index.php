@@ -9,7 +9,7 @@ require_once('globals.php');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StarFilms</title>
-    <link rel="shortcut icon" href="<?= $BASE_URL ?>img/moviestar.ico" type="image/x-icon">
+    <link rel="short icon" href="<?= $BASE_URL ?>img/moviestar.ico" type="image/x-icon">
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.css" integrity="sha512-VcyUgkobcyhqQl74HS1TcTMnLEfdfX6BbjhH8ZBjFU9YTwHwtoRtWSGzhpDVEJqtMlvLM2z3JIixUOu63PNCYQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- font-awesome -->
@@ -21,11 +21,11 @@ require_once('globals.php');
 <body>
     <header>
         <nav id="main-navbar" class="navbar navbar-expand-lg">
-            <a href="<?= $BASE_URL ?>" class="" navbar-brand>
+            <a href="<?= $BASE_URL ?>" class="navbar-brand">
                 <img src="<?= $BASE_URL ?>img/logo.svg" alt="StarFilms" id="logo">
                 <span id="starfilms-title">StarFilms</span>
             </a>
-            <button class="nav-bar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="togglenavigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
             </button>
             <form action="" method="GET" id="search-form" class="form-inline my-2 my-lg-0">
@@ -39,7 +39,7 @@ require_once('globals.php');
                     <li class="nav-item">
                         <a href="<?= $BASE_URL ?>auth.php" class="nav-link">Entrar / Cadastrar</a>
                     </li>
-                </ul>    
+                </ul>
             </div>
         </nav>
     </header>
@@ -47,7 +47,7 @@ require_once('globals.php');
         <h1>Corpo do site</h1>
     </div>
     <footer id="footer">
-        <div class="social-container">
+        <div id="social-container">
             <ul>
                 <li>
                     <a href="#"><i class="fab fa-facebook-square"></i></a>
@@ -63,7 +63,7 @@ require_once('globals.php');
         <div id="footer-links-container">
             <ul>
                 <li><a href="#">Adicionar filme</a></li>
-                <li><a href="#">Adicionar critica</a></li>
+                <li><a href="#">Adicionar crítica</a></li>
                 <li><a href="#">Entrar / Registrar</a></li>
             </ul>
         </div>
