@@ -15,7 +15,7 @@ require_once('globals.php');
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- style css -->
-    <link rel="stylesheet" href="<?= $BASE_URL ?>css/style.css">
+    <link rel="stylesheet" href="<?= $BASE_URL ?>css/styles.css">
 </head>
 
 <body>
@@ -34,9 +34,41 @@ require_once('globals.php');
                     <i class="fas fa-search"></i>
                 </button>
             </form>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="<?= $BASE_URL ?>auth.php" class="nav-link">Entrar / Cadastrar</a>
+                    </li>
+                </ul>    
+            </div>
         </nav>
     </header>
-
+    <div id="main-container" class="container-fluid">
+        <h1>Corpo do site</h1>
+    </div>
+    <footer id="footer">
+        <div class="social-container">
+            <ul>
+                <li>
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div id="footer-links-container">
+            <ul>
+                <li><a href="#">Adicionar filme</a></li>
+                <li><a href="#">Adicionar critica</a></li>
+                <li><a href="#">Entrar / Registrar</a></li>
+            </ul>
+        </div>
+        <p><a href="github.com/MFantiniT">&copy; 2024 FantiniDEV</a></p>
+    </footer>
 
     <!-- JS BOOTSTRAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.js" integrity="sha512-lsA4IzLaXH0A+uH6JQTuz6DbhqxmVygrWv1CpC/s5vGyMqlnP0y+RYt65vKxbaVq+H6OzbbRtxzf+Zbj20alGw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
